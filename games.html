@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nebula Break · Star Obby</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="Games">
+  <canvas id="galaxy"></canvas>
+  <div class="nebula"></div>
+
+  <header class="top">
+    <a class="btn small go" data-href="hub.html" href="hub.html">← Back</a>
+    <span></span>
+  </header>
+
+  <div class="page-head">
+    <h2 class="title">🎮 Star Obby</h2>
+    <p class="sub">Tap, click or press Space to jump. Reach the 🏁 in every level. Level 5 is the hardest obby.</p>
+  </div>
+
+  <main class="game-wrap wide">
+    <div class="levels" id="levels"></div>
+    <div class="stats">
+      <span class="pill" id="lname">Level 1</span>
+      <span class="pill">Attempts: <b id="tries">0</b></span>
+    </div>
+    <canvas id="obby"></canvas>
+    <div class="bar"><i id="prog"></i></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

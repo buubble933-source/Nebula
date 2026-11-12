@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nebula Break · Memory</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="memory">
+  <canvas id="galaxy"></canvas>
+  <div class="nebula"></div>
+
+  <header class="top">
+    <a class="btn small go" data-href="hub.html" href="hub.html">← Back</a>
+    <span></span>
+  </header>
+
+  <div class="page-head">
+    <h2 class="title">🧠 Memory Game</h2>
+    <p class="sub">Watch the preview, then match every pair. Fewer moves = more stars.</p>
+  </div>
+
+  <main class="game-wrap">
+    <div class="levels" id="levels"></div>
+    <div class="stats">
+      <span class="pill">Moves: <b id="moves">0</b></span>
+      <span class="pill">Time: <b id="time">0s</b></span>
+      <span class="pill">Best: <b id="best">–</b></span>
+    </div>
+    <div class="board" id="board"></div>
+    <button class="btn" id="restart">↻ Restart level</button>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="box">
+      <h3 id="mTitle"></h3>
+      <div id="mStars"></div>
+      <p id="mText"></p>
+      <div class="row">
+        <button class="btn" id="mNext">Next level →</button>
+        <button class="btn" id="mAgain">Play again</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
